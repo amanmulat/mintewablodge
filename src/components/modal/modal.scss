@@ -1,0 +1,100 @@
+.modal_container{
+    width : 90%;
+    background : white ;
+    box-shadow : 0 2px 8px rgba(0,0,0 , 0.26);
+    position : fixed ;
+    top: 5vh; 
+    left : 5%;
+    z-index : 100;
+    border-radius : 15px;
+    header{
+        padding :1rem ; 
+        background : sandybrown ;       
+    }  
+    .errors{
+        padding: 1rem;
+        background: rgb(255, 91, 91);
+        text-align: center;
+        h2{
+            font-size:1rem ;
+            color: white;
+            text-align: center;
+        }
+    }  
+    header h1{
+        margin : 0;
+        font-size : 1.25rem;
+    }
+    h2{
+        text-align: start;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0.2rem;
+        padding-left: 0;
+    }
+    .modal_booking_content{
+        p{
+            margin: 0;
+            padding : 0;
+            font-size: 1rem;
+        }
+    }
+
+    .modal_content {
+        padding : 1rem ;
+    }
+    .modal_action{
+        display : flex ; 
+        justify-content : flex-end;
+        padding : 1rem;       
+    }
+    .modal_action button  {
+        margin-left : 1rem;
+    }
+}
+@media(min-width : 768px ){
+    .modal_container{
+        width : 30rem;
+        left: calc((100% - 30rem)/2);
+    }
+    
+}
+
+// const DIV = styled.div`
+//     width : 90%;
+//     background : white ;
+//     box-shadow : 0 2px 8px rgba(0,0,0 , 0.26);
+//     position : fixed ;
+//     top: 5vh; 
+//     left : 5%;
+//     z-index : 100;
+//     border-radius : 15px;
+//     header{
+//         padding :1rem ; 
+//         background : sandybrown ; 
+//         text-color : white : 
+      
+//     }    
+//     header h1{
+//         margin : 0;
+//         font-size : 1.25rem;
+//     }
+//     .modal_content {
+//         padding : 1rem ;
+//         span {
+//             color : pink;
+//         }
+//     }
+//     .modal_action{
+//         display : flex ; 
+//         justify-content : flex-end;
+//         padding : 1rem;       
+//     }
+//     .modal_action button  {
+//         margin-left : 1rem;
+//     }
+//     @media(min-width : 768px ){
+//         width : 30rem;
+//         left: calc((100% - 30rem)/2);
+//     }
+// `

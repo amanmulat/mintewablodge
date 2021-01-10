@@ -1,0 +1,34 @@
+
+.auth-form {
+     width : 40rem ;
+     max-width : 80%;
+     margin : 5rem auto;
+    }
+
+
+.auth-input input {
+    width : 100%;
+    display : block;
+    background-color : none;
+    margin-bottom: 1rem;
+    border-top: none ; 
+    border-right: none ; 
+    border-left: none ; 
+   
+}
+.auth-action button{
+    background-color: sandybrown;
+    font : inherit;
+    border : 1px solid sandybrown;
+    padding: 0.25rem 1rem ;
+    margin-right: 1rem ;
+    color : white ; 
+    cursor: pointer;
+}
+.auth-action button:hover,
+.auth-action button:active
+{
+    
+    background-color: rgb(255, 173, 101);
+    border-color : rgb(255, 173, 101);
+}

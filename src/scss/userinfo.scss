@@ -1,0 +1,106 @@
+.items-reserve{
+    // border-right:1px rgba(0, 0, 0, 0.192) solid ;
+    
+}
+.sizerr{
+    width: 100%;
+    padding: 0.5rem 0rem 0.5rem 0;
+    label{
+        margin-bottom: 0;
+    }
+}
+.MuiFormControl-marginNormal{
+    margin: 0;
+}
+
+// .forPadding{
+//     padding: 0.5rem 0rem 0.5rem 0;
+// }
+.yourstay{
+ padding-top:1rem ;
+//  padding-bottom: 1rem;
+
+}
+.address{
+    padding-top:1.5rem ;
+
+}
+.contactInfo{
+    padding-top:1rem ;
+    padding-bottom: 0.1rem;
+}
+.contactInfoInput{
+    width: 100%;
+    padding: 0.7rem 0rem 0.7rem 0;
+    
+}
+.addressInput{
+    width: 100%;
+    margin: 0.7rem 0rem 0.7rem 0;
+    justify-content: flex-end;
+    height: 100%;
+}
+.prefix{
+    width: 30%;
+}
+.firstname{
+    width: 70%;
+}
+.city{
+    width: 100%;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+}
+.userformbutton{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+@media screen and (max-width : 992px){
+    .contactInfoInput{
+        width: 80%;
+    }
+    .addressInput{
+        width: 80%;
+    }
+    .city{
+        width: 80%;
+    }
+    .userformbutton{
+        width: 80%;
+
+    }
+    .sizerr{
+        width: 80%;
+    }
+        
+    
+}
+@media screen and (max-width : 767px){
+    .removeRightBorder{
+        border-right:1px rgba(0, 0, 0, 0.192) solid ;
+        padding-top: 1rem;
+    }
+     .userformbutton{
+        width: 100%;
+        height: inherit;
+
+    }
+    .contactInfoInput{
+        width: 100%;
+    }
+    .addressInput{
+        width: 100%;
+    }
+    .city{
+        width: 100%;
+    }
+   
+    .sizerr{
+        width: 100%;
+    }
+        
+    
+}

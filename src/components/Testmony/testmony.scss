@@ -1,0 +1,38 @@
+
+.carousel{
+    z-index: 9;
+}
+.carousel-background{
+    display: block;
+  
+    background-color: rgb(251, 251, 251);
+    min-height : 60vh;
+}
+.carousel-caption{
+    top: 20%;
+    bottom: 20%;
+    margin: 0;
+    padding: 1rem;
+    z-index: 10;
+    p{
+        line-height: 1.8;
+        text-align: start;
+        color: black;
+    }
+    h3{
+      
+        color: black;
+        font-size: 4rem;
+
+    }
+    h4{
+        color: rgba(0, 0, 0, 0.575);
+       
+    }
+}
+.carousel-indicators li{
+    width: 15px ;
+    height: 15px;
+    border-radius: 100%;
+    background-color: sandybrown;
+}

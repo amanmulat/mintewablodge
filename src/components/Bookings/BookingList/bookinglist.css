@@ -1,0 +1,62 @@
+.modalmodal span{
+    color : pink;
+}
+.ul{
+    margin: 0 auto;
+    padding : 0;
+    display: block;
+    width : 65rem; 
+    max-width : 90%;
+    
+}
+.grid_booking{
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.bookings_item_li_active{
+    background-color: rgba(119, 5, 24, 0.103);
+}
+.bookings_item_li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    list-style : none ; 
+    margin : 0.5rem 0.1rem 0.5rem 0;
+    padding : 0.5rem; 
+    border : 1px solid sandybrown ; 
+    justify-content : space-between ;
+    align-items : center; 
+}
+.bookings_item_li h2{
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
+.bookings_item_li .room_type{
+    color: saddlebrown;
+    font-size: 1.2rem;
+}
+.btnbtn{
+    padding : 0.3rem;
+}
+.bookings_item-data-info p{
+    font-family: 'Poppins', sans-serif;
+    color: saddlebrown;
+    margin: 0;    
+}
+.bookings_item-action {
+    margin: 0.5rem 0;
+    bottom: 0rem;
+    width: 100%;
+}
+.bookings_item-action button{
+    
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    border : 1px solid sandybrown ;
+    background-color: white;
+    color : sandybrown;
+    background-image: none;
+}

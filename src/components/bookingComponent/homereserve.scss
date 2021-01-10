@@ -1,0 +1,46 @@
+.items-reserve{
+    border-right:1px rgba(0, 0, 0, 0.192) solid ;
+    
+}
+.bookHorizontal{
+    padding: 5rem 0;
+    justify-content: center;
+    align-items: center;
+    .booknoww{
+        h4{
+            margin-bottom: 1.5rem;
+        }
+        
+    }
+}
+.sizer{
+    width: 100%;
+}
+.MuiFormControl-marginNormal{
+    margin: 0;
+}
+.removeRightBorder{
+    border-right: none;
+}
+.forPadding{
+    padding: 0.5rem 0rem 0.5rem 0;
+}
+
+@media screen and (max-width : 992px){
+    .removeRightBorder{
+        border-right:1px rgba(0, 0, 0, 0.192) solid ;
+        // padding-top: 1rem;
+    }
+    
+        
+    
+}
+@media screen and (max-width : 767px){
+    .removeRightBorder{
+        border-right:1px rgba(0, 0, 0, 0.192) solid ;
+        padding-top: 1rem;
+    }
+    
+        
+    
+}

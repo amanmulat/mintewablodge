@@ -1,0 +1,18 @@
+.mincard-text{
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.mincard-body{
+    padding: 0.2rem;
+    margin-top: 1rem;
+}
+.mincard-img-top{    
+    height: 18rem;
+    width: 100%;
+    transform: scale(1); 
+    transition: transform 0.5s ease;
+}
+.mincard-img-top:hover{
+    transform: scale(1.2);
+}
+

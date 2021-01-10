@@ -1,0 +1,96 @@
+// @import './burger.scss';
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     :focus{
+//         outline: none;
+//   box-shadow: none;
+//     }
+    
+// }
+
+// .navbar {
+//     transition: top 
+    
+//   }
+  
+ 
+
+
+// // main{
+// //     position: relative;
+// //     top:70px;
+// // }
+
+// nav{
+//     position: fixed;
+//     display: flex;
+//     width: 100%;
+//     top: 0;
+//     justify-content: space-around;
+//     align-items: center;
+//     height:70px ;
+//     font-family: 'Poppins', sans-serif;
+//     z-index: 150;
+//     background-color: white;
+// }
+
+// .logo{
+//     text-transform: uppercase;
+//     letter-spacing: 5px;
+//     font-size: 20px;
+//     color: sandybrown;
+//     text-shadow: 0px 2px 3px #ffffffad , -2px -2px 3px #ffffffb0;
+    
+// }
+// .navlinklink{
+//     display: flex;
+//     width: 35%;
+//     justify-content: space-around;
+  
+// }   
+   
+// .navlinklink li{
+//     list-style: none;
+// }
+// .navlinklink a{
+//     color: rgb(212, 206, 206);
+//     text-decoration: none;
+//     letter-spacing: 3px;
+//     font-size: 14px;
+//     color: rgb(0, 0, 0);
+
+//     // font-weight: bold;
+// }
+// .navlinklink{
+//     li{
+//         a:active ,
+//         a:hover {
+//             color: sandybrown;
+//         }
+//     }
+    
+// }
+
+
+
+
+// @media screen and  (max-width: 1080px){
+//     .navlinklink{
+//         justify-content: space-around;
+//         display: flex;
+//         width: 45%;
+//     }
+// }
+// @media screen and  (max-width: 760px){
+  
+//     .burger{
+//         display: block;
+//     }
+//     .navlinklink{
+//         display: none;
+//     }
+
+// }
+

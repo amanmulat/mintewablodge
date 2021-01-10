@@ -1,0 +1,31 @@
+@import '../../scss/color.scss';
+
+.bigtext {
+    
+   line-height: 0%;
+  padding-top: 35vh;
+  
+    
+}
+
+.mintewab{
+   font-family: $header-font;
+    font-weight: 500;
+    font-size: 7vw;
+    color : $white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 50%;
+   text-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2)  ;
+  
+    
+}
+.lodge {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: lighter;
+    text-align: start;
+    font-size: 5vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+
