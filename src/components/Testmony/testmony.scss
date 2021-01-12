@@ -1,12 +1,13 @@
 
 .carousel{
     z-index: 9;
+    height: auto;
 }
 .carousel-background{
     display: block;
   
-    background-color: rgb(251, 251, 251);
-    min-height : 60vh;
+    background-color: #ffffff;
+    min-height : 75vh;
 }
 .carousel-caption{
     top: 20%;
@@ -22,7 +23,7 @@
     h3{
       
         color: black;
-        font-size: 4rem;
+        font-size: 3rem;
 
     }
     h4{
@@ -35,4 +36,58 @@
     height: 15px;
     border-radius: 100%;
     background-color: sandybrown;
+}
+@media(max-width : 992px){
+    .carousel-background{
+        height: 80vh;
+    }
+    .carousel-caption{
+        top:10%;
+        bottom:10%;
+        z-index: 10;
+        p{
+            line-height: 1.5;
+            text-align: justify;
+            color: black;
+        }
+        h3{
+          
+            color: black;
+            font-size: 2.7rem;
+    
+        }
+        h4{
+            color: rgba(0, 0, 0, 0.575);
+           font-size: 1.2rem;
+        }
+    }
+}
+@media(max-width : 620px){
+    .carousel-background{
+        height: 80vh;
+    }
+    .carousel-caption{
+        top:10%;
+        bottom:10%;
+        z-index: 10;
+        padding-left: 0;
+        padding-right: 0;
+        p{
+            line-height: 1.3;
+            text-align: justify;
+            color: black;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        h3{
+          
+            color: black;
+            font-size: 2rem;
+    
+        }
+        h4{
+            color: rgba(0, 0, 0, 0.575);
+           font-size: 1rem;
+        }
+    }
 }

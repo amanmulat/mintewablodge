@@ -1,11 +1,8 @@
 import React from 'react'
 import {Card} from './card/card'
-import Bedroom from '../../assets/card/service/bedroom.jpg'
-import Sunset from '../../assets/card/service/sunset.jpg'
-import People from '../../assets/card/service/people.jpg'
+
 
 import './cards.scss'
-let description = "occaecat sit laborum voluptate. Excepteur minim velit id excepteur qui velit velit eiusmod ex. Magna amet elit qui pariatur." 
 
 
 

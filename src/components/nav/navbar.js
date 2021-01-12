@@ -39,6 +39,15 @@ const Nav = styled.nav`
   .navScrollClass {
     background-color : white ; 
   }
+  @media(max-width : 500px){
+    .logo{
+      a{
+         font-size : 1.2rem;
+         letter-spacing : 3px
+      }
+     
+    }
+  }
   
 `
 
@@ -48,9 +57,13 @@ const Navbar = (props) => {
     <Nav inView={props.inView}>
       <div className=  "container lela" >
         <div  className="logo" >
+      {props.inView && 
+      
            <Link to='/#home'
             scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start', inline: "end"})}
            >Mintewab Lodge </Link>
+        
+      }
         </div>
         <Burger />
      </div>

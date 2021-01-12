@@ -67,7 +67,7 @@ const BookingList =props=>{
                             <option value=""></option>
                             {context.roomFetched.map(roomvalue =>{
                                 if(selectedBooking.room.title === roomvalue.title){
-                                    return
+                                    return 0
                                 }
                                 return(
                                     <option value={roomvalue._id}>{roomvalue.title}</option>

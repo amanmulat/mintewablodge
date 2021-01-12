@@ -13,9 +13,11 @@ const BookingPage =()=>{
         fetchRooms();
        
     },[theToken ])
+
     const [isLoading, setIsLoading] = useState(false)
     const [bookings, setBookings] = useState([])
-
+    const [rooms, setRooms] = useState(null)
+    context.roomFetch(rooms);
     const verifyBookingHandler = (bookingId , gotapproval , roomid ) =>{
      
         const approval = !gotapproval
@@ -220,13 +222,13 @@ const BookingPage =()=>{
               return res.json();
           }).then(resData =>{
             const rooms = resData.data.rooms
-            context.roomFetch(rooms)
-            //  setRooms(rooms);
+            // context.roomFetch(rooms)
+             setRooms(rooms);
              setIsLoading(false)
           })
           .catch(err=>{
               console.log(err)
-              setIsLoading(false)
+            //   setIsLoading(false)
           })
     }
     

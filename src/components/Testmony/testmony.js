@@ -2,7 +2,7 @@ import React from 'react'
 import testmonys from './content'
 import "./testmony.scss"
 import Carousel from 'react-bootstrap/Carousel'
-import imgimg from '../../assets/37.jpg'
+
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import { ThemeProvider } from "@material-ui/core";
@@ -47,11 +47,11 @@ const Testmony = ()=>{
 
           
           <Carousel.Caption className="row">
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <h3 >" {oneTestmony.title} "</h3>
               <h4>Biruk Helan</h4>
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <p >" {oneTestmony.description} "</p>
             </div>
           </Carousel.Caption></div>

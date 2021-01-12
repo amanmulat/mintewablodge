@@ -5,12 +5,11 @@ import {Backdrop} from '../components/backdrop'
 import AuthContext from '../context/auth-context';
 import RoomList from '../components/Room/RoomList/roomlist'
 import Spinner from '../components/Spinner/spinner'
-import { useEffect } from 'react';
+
 const titleElement = createRef()
 const priceElement = createRef()
 const dateElement = createRef()
 const descriptionElement = createRef()
-const roomtypeElement = createRef()
 
 
 

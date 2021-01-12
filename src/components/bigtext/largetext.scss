@@ -4,14 +4,26 @@
     
    line-height: 0%;
   padding-top: 35vh;
+  align-items: center;
+  .MuiButtonBase-root{
+   display: flex;
+      outline: none;
+      box-shadow: none;
+    margin: auto;
   
+  }
+
+  .MuiSvgIcon-root{
+     fill: sandybrown;
+     display: flex;
+  }
     
 }
 
 .mintewab{
    font-family: $header-font;
     font-weight: 500;
-    font-size: 7vw;
+    font-size: 7rem;
     color : $white;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -24,8 +36,30 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  font-weight: lighter;
     text-align: start;
-    font-size: 5vw;
+    font-size: 4rem;
     margin-top: 0;
     padding-top: 0;
+    margin-bottom: 0;
 }
 
+@media(max-width : 768px){
+   .mintewab{
+      font-size: 5rem;
+   }
+   .lodge{
+      font-size: 3rem;
+    
+   }
+}
+@media(max-width : 450px){
+   .mintewab{
+      font-size: 17vw;
+      margin: auto;
+      padding: auto;
+      text-align: center;
+   }
+   .lodge{
+      font-size: 13vw;
+      text-align: center;
+   }
+}

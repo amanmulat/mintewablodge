@@ -2,12 +2,12 @@ import React , {useContext}from "react";
 // import {Home} from '../components/home';
 import {About} from '../components/about';
 import {Services} from '../components/services/services';
-import {MustVisit} from '../components/mustVisit';
+
 import { InView } from 'react-intersection-observer'
 import SLanding from './sLanding'
 import AuthContext from '../context/auth-context'
 import Booking from '../components/bookingComponent/homereserve'
-
+import Testmony from '../components/Testmony/testmony'
 function Landing (props){
     const context = useContext(AuthContext)
     const [inView, setInView] = React.useState(true)
@@ -17,12 +17,13 @@ function Landing (props){
         <React.Fragment>
             
             <SLanding/>
-            <InView  onChange={ setInView} threshold={0.05}>
+            <InView  onChange={ setInView} threshold={0.12}>
             <Booking/>
             {context.navigationScrollThingi(inView)}
                 <About />
                 <Services/>
-                <MustVisit/>
+                <Testmony/>
+                
                 
             </InView>
         </React.Fragment>

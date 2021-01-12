@@ -1,6 +1,6 @@
 import React, { useState  ,useEffect} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import bg from '../assets/front-gate.jpg'
+
 // import bg from '../assets/37.jpg'
 import BigText from '../components/bigtext/largetext'
 import { Collapse } from '@material-ui/core';
