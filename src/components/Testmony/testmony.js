@@ -2,6 +2,7 @@ import React from 'react'
 import testmonys from './content'
 import "./testmony.scss"
 import Carousel from 'react-bootstrap/Carousel'
+import { StylesProvider } from "@material-ui/core/styles";
 
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -36,23 +37,29 @@ const Testmony = ()=>{
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
-  
+    let leftarrow =<StylesProvider injectFirst><ArrowBackIosIcon/></StylesProvider> 
+    let rightarrow =<StylesProvider injectFirst><ArrowForwardIosIcon /></StylesProvider>
     return (
       <ThemeProvider theme={theme}> 
-      <Carousel interval = {null} activeIndex={index} onSelect={handleSelect} prevIcon={<ArrowBackIosIcon color="primary"/>} nextIcon={<ArrowForwardIosIcon color="primary"/>}>
-        {testmonys.map(oneTestmony =>{
+
+      <Carousel interval = {null} activeIndex={index} onSelect={handleSelect} prevIcon={leftarrow} nextIcon={rightarrow}>
+      
+   
+      {testmonys.map(oneTestmony =>{
           return(
             <Carousel.Item>
           <div className="carousel-background " >
 
           
-          <Carousel.Caption className="row">
-            <div className="col-lg-6">
+          <Carousel.Caption >
+            <div className="row vption ">
+            <div className="col-lg-6 captionTitle" >
               <h3 >" {oneTestmony.title} "</h3>
               <h4>Biruk Helan</h4>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 captionDescription" >
               <p >" {oneTestmony.description} "</p>
+            </div>
             </div>
           </Carousel.Caption></div>
         </Carousel.Item>

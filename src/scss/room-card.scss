@@ -1,3 +1,4 @@
+@import "./color.scss";
 *,
 ::before,
 ::after{
@@ -11,6 +12,7 @@
 .roomcards{
     align-items: center;
     display: block;
+    font-family: $paragraph-font;
 }
 .roomcard {
   
@@ -60,7 +62,7 @@
 .desc-top p{
     
     font-size: 0.9rem;
-   
+   color: rgba(0, 0, 0, 0.801);
 }
 .action-bottom{
     display: block;
@@ -71,7 +73,7 @@
     /* justify-content: space-around; */
 }
 .rightsideinfo{
-    position: relative;
+    padding-top: 30px;
     
 }
 .smt{
@@ -127,4 +129,13 @@
         position: relative;
         padding-top: 5px;
     }
+}
+@media screen and (max-width: 450px){
+   .rightsideinfo{
+       height: 20rem;padding-top: 15px;
+   }
+   .room-img{
+       height: 12rem;
+       
+   }
 }

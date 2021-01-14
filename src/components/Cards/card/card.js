@@ -1,5 +1,7 @@
 import React from 'react'
 import './card.scss'
+
+
 export const Card = props=> 
     (
         <div className="mincard  ">

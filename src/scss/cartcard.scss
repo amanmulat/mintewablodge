@@ -1,0 +1,51 @@
+.cartcard{
+     display: block;
+        background-color: rgb(255, 255, 255);
+        padding: 1rem;
+        border-radius: 0.4rem;
+       height: 100%;
+        box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.082);
+    
+     
+
+}
+.cartcart-bigger{
+    height: 100%;
+    padding: 1rem 0;
+}
+.your-stay{
+    font-size: 1.2rem;
+    margin: 10px;
+    display: block;
+}
+.hotel-cart-container{
+    margin: 10px;
+    
+    /* flex-wrap: wrap; */
+}
+.checkin{
+    padding: 10px 0;
+   span{
+       display: block;
+   }
+}
+
+.checkout{
+    padding: 0px 0 10px 0;
+    span{
+        display: block;
+    }
+}
+
+.action-cartcard{
+    span{
+        display: block;
+    }
+}
+@media screen and (max-width : 768px){
+    .cartcard{
+      
+        display: none;
+    
+    }
+}

@@ -1,5 +1,5 @@
 import React  , {useContext}from 'react'
-import '../scss/room-card.css'
+import '../scss/room-card.scss'
 import { Link } from 'react-router-dom'
 import AuthContext from '../context/auth-context'
 
@@ -21,7 +21,7 @@ export const RoomCard = props =>{
                        <p>{props.description} </p>
                 </div>
                 <div className="action-bottom">
-                       <span><p>price: ${props.price} </p></span>
+                       <span><p>Price: ${props.price} </p></span>
                        <Link 
                        className="btnbtn" 
                        to={{pathname : "/rooms/reserve"}} 
@@ -34,22 +34,6 @@ export const RoomCard = props =>{
                 
             </div>
         </div>
-        // <div className="roomcard"> 
-        //     <div className='room-img '>
-        //         <img src={props.imgsrc} alt={props.imgalt} />
-        //     </div>
-        //     <div className='room-info'>
-        //             <div className="desc-top">
-        //                 <h3>{props.title}</h3> 
-        //                 <p>{props.description} </p>
-        //             </div>
-        //             <div className="action-bottom">
-        //                 <span><p>${props.price} - {props.roomid} </p></span>
-        //                 <Link className="btnbtn" to={{pathname : "/rooms/reserve"}} onClick={context.roomSelect(props.title , props.roomid)}>
-        //                     Book Room
-        //                 </Link>
-        //             </div>
-        //     </div>
-        // </div>
+  
     )
 } 

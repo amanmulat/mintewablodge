@@ -1,4 +1,4 @@
-import React, {  useContext  } from 'react';
+import React, {  useContext    } from 'react';
 import { RoomCards } from '../components/roomcards'
 import {CartCard} from '../components/cartcard'
 import AuthContext from '../context/auth-context'
@@ -6,8 +6,8 @@ import rooms from '../components/roomContent/content'
 function Rooms (props) {
   //used for the navigation 
   var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
-
   const context = useContext(AuthContext)
+  context.roomSelect(null , null)
   context.navigationScrollThingi(true) 
   let checkin=""
   let checkout=""
@@ -24,7 +24,7 @@ return (
      <RoomCards rooms={rooms} />
     </div>
     <div  className='col-lg-4 col-md-5'>
-      <CartCard className=" displayCart" 
+      <CartCard 
       roomselected={''}
       checkin={checkin} 
       checkout={checkout}

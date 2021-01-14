@@ -1,6 +1,9 @@
+@import '../../../scss/color.scss';
 .mincard-text{
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-family: $paragraph-font;
+    text-align: justify;
 }
 .mincard-body{
     padding: 0.2rem;

@@ -1,8 +1,10 @@
+@import "../../scss/color.scss";
 .items-reserve{
     border-right:1px rgba(0, 0, 0, 0.192) solid ;
     
 }
 .bookHorizontal{
+    font-family:$paragraph-font ;
     padding: 5rem 0;
     justify-content: center;
     align-items: center;
