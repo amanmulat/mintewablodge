@@ -150,7 +150,7 @@ if((context.checkin || context.checkout) === null){
         `
     };
     
-    fetch('http://localhost:8000/graphql',{
+    fetch('https://aqueous-reaches-77121.herokuapp.com/',{
             method : 'POST',
             body : JSON.stringify(requestBody) , 
             // for gql to work we need to tell it in which format we sending so header
@@ -202,7 +202,7 @@ const bookinghandler =(custmerId)=>{
     };
 
 
-    fetch('http://localhost:8000/graphql',{
+    fetch('https://aqueous-reaches-77121.herokuapp.com/',{
             method : 'POST',
             body : JSON.stringify(requestBody) , 
             // for gql to work we need to tell it in which format we sending so header
