@@ -135,7 +135,7 @@ if((context.checkin || context.checkout) === null){
                           
                             <div className="col-md-6 col-lg-3 items-reserve  removeRightBorder"  >
                               <div className="forPadding">
-                                  <Link to='/rooms' className= "btnbtn sizer">
+                                  <Link to='/auth' className= "btnbtn sizer">
                                       Check Availablity
                                   </Link >
                               </div>
