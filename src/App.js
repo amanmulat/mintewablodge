@@ -47,8 +47,7 @@ const roomFetch = (roomFetched)=>{
 setRoom(roomFetched)
 }
 
-console.log(token)
-console.log('app.js')
+
   return (
     <Router>
        <div className="all">

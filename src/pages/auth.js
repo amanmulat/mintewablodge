@@ -21,7 +21,7 @@ function Auth(){
         const email =emailElement.current.value ;
         const password = passwordElement.current.value
         if(email.trim().length === 0 || password.trim().length ===0 ){
-            console.log('no email or password')
+      
             setIsLoading(false)
             return;
             
@@ -57,7 +57,7 @@ function Auth(){
             return res.json();
         }).then(resData =>{
             //if we are loged in
-            console.log(resData)
+          
             if(resData.data.login.token){
                 context.login(resData.data.login.token , resData.data.login.adminId , resData.data.login.tokenExpiration )
             
@@ -66,7 +66,8 @@ function Auth(){
         })
         .catch(err=>{ 
             setIncorrect(true)
-            console.log(err)
+            
+            
             setIsLoading(false)
 
         })

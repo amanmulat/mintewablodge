@@ -164,12 +164,13 @@ if((context.checkin || context.checkout) === null){
             }
             return res.json();
         }).then(resData =>{
-        console.log(resData)
+     
         let custmerId = resData.data.createCustmer._id
         bookinghandler(custmerId)
         })
         .catch(err=>{
-            console.log(err)
+          
+          
            
         })
     }
@@ -218,11 +219,11 @@ const bookinghandler =(custmerId)=>{
             }
             return res.json();
         }).then(resData =>{
-        console.log(resData)
+      
        context.roomSelect(null)
         })
         .catch(err=>{
-            console.log(err)
+            
            
         })
     }

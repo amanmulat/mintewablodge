@@ -71,17 +71,16 @@ const BookingPage =()=>{
                   }
                   return res.json();
               }).then(resData =>{
-                  console.log(resData)
+                 
                   let isActive = true 
                 fetchBookings(theToken , isActive)
               })
               .catch(err=>{
-                  console.log(err)
+             
                   setIsLoading(false)
               })
     }
     const deleteBookingHandler = bookingId =>{
-        console.log(bookingId)
         setIsLoading(true);
           const requestBody ={
               query : `
@@ -121,7 +120,8 @@ const BookingPage =()=>{
             })
               })
               .catch(err=>{
-                  console.log(err)
+            
+                
                   setIsLoading(false)
               })
     }
@@ -168,18 +168,19 @@ const BookingPage =()=>{
                   }
                   return res.json();
               }).then(resData =>{
-                //   console.log(resData.data.bookings.map() + " mesosela")
+   
                   
                 const bookingss = resData.data.bookings
                 if(isActive){
-                    console.log(bookingss)
+                   
+                    
                      setBookings(bookingss)
                 }
                 setIsLoading(false)
-                console.log(isActive)
+              
               })
               .catch(err=>{
-                  console.log(err)
+       
                   setIsLoading(false)
               })
          
@@ -227,7 +228,7 @@ const BookingPage =()=>{
              setIsLoading(false)
           })
           .catch(err=>{
-              console.log(err)
+     
             //   setIsLoading(false)
           })
     }

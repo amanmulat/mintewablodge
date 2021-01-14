@@ -17,13 +17,13 @@ function Userinfos
   let checkout=""
   let checkinSet=""
   let checkoutSet=""
-  console.log(context.checkin + "was up")
+ 
 if((context.checkin && context.checkout )!==null){
   checkin = context.checkin.toLocaleDateString("en-US", options)
   checkinSet = context.checkin
 }
 if( context.checkout !==null){
-  console.log(context.checkout + " mozart")
+
    checkout = context.checkout.toLocaleDateString("en-US", options)
    checkoutSet = context.checkout
 }

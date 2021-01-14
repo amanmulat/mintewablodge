@@ -28,7 +28,7 @@ if((context.checkin || context.checkout) === null){
   checkin = new Date()
   let tmr = new Date()
    tmr.setDate(checkin.getDate() + 1)
-   console.log(tmr)
+  
   checkout = tmr
 }else {
   checkin = context.checkin
@@ -41,7 +41,7 @@ if((context.checkin || context.checkout) === null){
   const handleCheckinDateChange = (date) => {
     if(date!==null){
       setCheckinDate(date);  
-      console.log(date.setHours(0 , 0 , 0 , 0))
+ 
       checkoutDate.setHours(0 , 0 , 0 , 0)
 
       if(date.getTime() >= checkoutDate.getTime() ){

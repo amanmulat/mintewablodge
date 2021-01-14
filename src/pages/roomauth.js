@@ -129,11 +129,11 @@ const RoomAuth=()=>{
                     }
                     return res.json();
                 }).then(resData =>{
-                console.log(resData)
+              
                 setSelectedRoom(null)
                 })
                 .catch(err=>{
-                    console.log(err)
+         
                    
                 })
         }
@@ -316,7 +316,7 @@ const RoomAuth=()=>{
             return res.json();
         }).then(resData =>{
             //if we are loged in or success in creating user
-            console.log(resData)
+   
             setCreatingAdmin(false)
             setIsLoading(false)
         })
