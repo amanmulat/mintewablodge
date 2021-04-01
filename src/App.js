@@ -24,12 +24,16 @@ export const App = () => {
 const [roomSelectedState, setRoomSelectedState] = useState(null)
 const [roomPrice, setroomPrice] = useState(null)
 const [token, setToken] = useState(null)
+const [ifbooked, setifbooked] = useState(false)
 const [adminId, setAdminId] = useState(null)
 const [checkin , setCheckin] = useState(null);
 const [checkout , setCheckout] = useState(null);
 const login=(token , adminId , tokenExpiration )=>{
   setToken(token);
   setAdminId(adminId)
+}
+const booked  = (isbooked)=>{
+  setifbooked(isbooked)
 }
 const logout =()=>{
   setToken(null)
@@ -53,7 +57,8 @@ setRoom(roomFetched)
        <div className="all">
           <AuthContext.Provider value={
             {
-              token : token , 
+              token : token ,
+              ifbooked : ifbooked, 
               adminId : adminId ,
               checkin : checkin,
               checkout :checkout,
@@ -63,6 +68,7 @@ setRoom(roomFetched)
               dateVisiting : dateVisiting,
               logout : logout, 
               login : login,
+              booked : booked,
               navigationScrollThingi : navigationScrollThingi,
               roomSelect : roomSelect,
               roomFetch : roomFetch

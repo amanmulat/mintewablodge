@@ -1,0 +1,82 @@
+.user_modal_container{
+    width : 30rem;
+    background : white ;
+    box-shadow : 0 2px 8px rgba(0,0,0 , 0.26);
+    position : fixed ;
+  top: 20vh;
+    left: calc((100% - 30rem)/2);
+    z-index : 100;
+    border-radius : 15px;
+    font-family: 'Poppins', sans-serif;
+
+    .modal_header{
+        padding :1rem ; 
+        background: none;
+        text-align: center;
+    } 
+    p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+   
+    header h1{
+        margin : 0;
+        font-size : 1.25rem;
+    }
+    section {
+       display: block;
+    }
+   .Stroke_button{
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    display: block;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    border: 1.5px solid sandybrown;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    width: 5rem;
+    margin: 1rem auto;
+    height: 2.5rem;
+    text-decoration: none;
+    :focus{
+        outline: none;
+  box-shadow: none;
+    }
+    //     margin: auto;
+    //    border: 1px solid sandybrown;
+    //    width: 5rem;
+    //    height: 2rem;
+    //    border-radius: 10px;
+    //    color : black;
+    //    background-color: white  ;
+    //   
+    //   
+    //    
+
+       
+   }
+   .Stroke_button:hover{
+  
+       background-color: sandybrown;
+       color : rgb(255, 255, 255);
+   }
+
+   
+}
+ .user_modal_container .MuiSvgIcon-root  {
+    fill: rgb(0, 255, 0);
+}
+@media(max-width : 768px ){
+    .user_modal_container{
+        width : 60vw;
+        left: calc((100% - 60vw)/2);
+    }
+    
+}
+

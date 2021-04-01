@@ -1,6 +1,6 @@
 import React, { createRef , useContext } from 'react'
 import TextField from '@material-ui/core/TextField';
-
+import{ Spinner} from './Spinner/Bigspinner';
 // import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 // import FormHelperText from '@material-ui/core/FormHelperText';
@@ -75,7 +75,7 @@ if((context.checkin || context.checkout) === null){
 
   const [checkinDate, setCheckinDate] = React.useState(checkin);
   const [checkoutDate, setCheckoutDate] = React.useState(checkout);
-   
+  const [spinner, setSpinner] = React.useState(false);
   const handleCheckinDateChange = (date) => {
    
         if(date!==null){
@@ -125,7 +125,7 @@ if((context.checkin || context.checkout) === null){
 
 
   const custmerInfoHandler=()=>{
-
+    setSpinner(true)
     const firstName = firstNameElement.current.value
     const lastName = lastNameElement.current.value
     const email = emailElement.current.value
@@ -160,17 +160,16 @@ if((context.checkin || context.checkout) === null){
     
         }).then(res => {
             if(res.status !== 200 && res.status !== 201){
-                throw new Error('Failed');
+                               throw new Error('Failed');
             }
             return res.json();
         }).then(resData =>{
-     
+        
         let custmerId = resData.data.createCustmer._id
-        bookinghandler(custmerId)
-        })
+        bookinghandler(custmerId) 
+                 })
         .catch(err=>{
-          
-          
+                    
            
         })
     }
@@ -182,6 +181,7 @@ if((context.checkin || context.checkout) === null){
 // **********
 // fuction to make a pending booking 
 const bookinghandler =(custmerId)=>{
+  
     const requestBody ={
         query : `
             mutation {
@@ -221,6 +221,8 @@ const bookinghandler =(custmerId)=>{
         }).then(resData =>{
       
        context.roomSelect(null)
+       setSpinner(false)
+       context.booked(true)
         })
         .catch(err=>{
             
@@ -246,7 +248,7 @@ const custmerInfoAndBookingHandler =  (event)=>{
             <h2>Reservation Online</h2>
 
     <form onSubmit={custmerInfoAndBookingHandler}> 
-   
+   {spinner && <Spinner/>}
     <ThemeProvider theme={theme}>  
     <StylesProvider injectFirst>
       <div className="row "> 

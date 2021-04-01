@@ -5,7 +5,7 @@
         border-radius: 0.4rem;
        height: 100%;
         box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.082);
-    
+        font-family: 'Poppins', sans-serif;
      
 
 }
@@ -28,8 +28,12 @@
    span{
        display: block;
    }
+  
 }
-
+ .time-and-date{
+       font-size: 0.9rem;
+       color: rgb(70, 70, 70);
+   }
 .checkout{
     padding: 0px 0 10px 0;
     span{
@@ -40,6 +44,9 @@
 .action-cartcard{
     span{
         display: block;
+    }
+    .totlacartcard{
+        font-size: 1.1rem;
     }
 }
 @media screen and (max-width : 768px){

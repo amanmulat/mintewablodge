@@ -3,6 +3,7 @@ import { RoomCards } from '../components/roomcards'
 import {CartCard} from '../components/cartcard'
 import AuthContext from '../context/auth-context'
 import rooms from '../components/roomContent/content'
+import {Modal} from '../components/modal/usermodal'
 function Rooms (props) {
   //used for the navigation 
   var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
@@ -16,9 +17,20 @@ if(context.checkin!==null){
    checkout = context.checkout.toLocaleDateString("en-US", options)
 }
 
+//for callback
+const modalCloseHandler = ()=>{
+  context.booked(false)
+}
+
 
 return (
 <div className="container room-container">
+  
+{context.ifbooked &&
+ <Modal
+  onClose={modalCloseHandler}
+ />
+}
   <div className="row">    
     <div  className='col-lg-8 col-md-7'>
      <RoomCards rooms={rooms} />

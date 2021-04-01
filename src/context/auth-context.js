@@ -13,7 +13,9 @@ export default React.createContext({
     adminId : null ,
     navigationScrollThingi :(inView)=>{},
     roomFetch : (roomFetched)=>{},
-    roomFetched : null
+    roomFetched : null,
+    booked : (isbooked ) =>{},
+    ifbooked : null
 
     
 })

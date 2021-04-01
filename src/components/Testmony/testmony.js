@@ -55,7 +55,7 @@ const Testmony = ()=>{
             <div className="row vption ">
             <div className="col-lg-6 captionTitle" >
               <h3 >" {oneTestmony.title} "</h3>
-              <h4>Biruk Helan</h4>
+              <h4>{oneTestmony.author}</h4>
             </div>
             <div className="col-lg-6 captionDescription" >
               <p >" {oneTestmony.description} "</p>

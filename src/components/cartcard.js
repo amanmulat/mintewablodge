@@ -9,16 +9,16 @@ export const CartCard =props=>{
             <span className="your-stay">Your Stay</span>
             <div className="hotel-cart-container">
                 <div  className="checkin">
-                    <b>Check-in</b>
-                    <span> After 2:00PM</span>
-                    <span>{props.checkin}</span>
+                    Check-in
+                    <span className="time-and-date"> After 2:00PM</span>
+                    <span className="time-and-date">{props.checkin}</span>
                 </div>
                 <div className="checkout">
-                    <b>Check-out</b>
+                   Check-out
 
                     {/* <span > </span>  */}
-                    <span>Before 12:00PM</span>
-                    <span>{props.checkout}</span>
+                    <span className="time-and-date">Before 12:00PM</span>
+                    <span className="time-and-date">{props.checkout}</span>
                 </div> 
                 <div className="action-cartcard">
                     <span>{props.roomselected}</span>
