@@ -53,6 +53,7 @@ export const Footer = () => (
             <a
               className="footerlinks"
               href="https://goo.gl/maps/nhwbt3PGfUQqEMNF8"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Lideta, Gondar ,Ethiopia
