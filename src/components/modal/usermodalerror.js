@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import "./usermodal.scss";
-import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
+import ErrorOutlineIcon from "@material-ui/icons/ErrorOutline";
 import { StylesProvider } from "@material-ui/core/styles";
 import { Backdrop } from "../backdrop";
 
@@ -15,25 +15,23 @@ function useLockBodyScroll() {
   }, []); // Empty array ensures effect is only run on mount and unmount
 }
 
-export const Modal = (props) => {
+export const Modalerror = (props) => {
   useLockBodyScroll();
   return (
     <React.Fragment>
       <Backdrop click={props.onClose} />
-      <div className="user_modal_container">
+      <div className=" user_modal_container user_modal_container_error">
         <header className="modal_header">
           <StylesProvider injectFirst>
             <h1>
-              Success <CheckCircleOutlineIcon className="successicon" />
+              Error <ErrorOutlineIcon className="successicon" />
             </h1>
           </StylesProvider>
         </header>
         <section>
           <p>
-            Your booking resquest has been sent. We will contact you with the
-            rest of the details
+            Your booking resquest has not been sent. Please try again later.
           </p>
-          <p>thank you for Staying with us.</p>
         </section>
         <section>
           <button className="Stroke_button" onClick={props.onClose}>
