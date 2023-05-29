@@ -63,8 +63,8 @@ export const Footer = () => (
         <div className="col-md-4 footerDesc">
           <EmailIcon className="footer-icons" />
           <span>
-            <a href="mailto:mulat.a.legesse@gmail.com">
-              mulat.a.legesse@gmail.com
+            <a href="mailto:contactmintewab@gmail.com">
+              contactmintewab@gmail.com
             </a>
           </span>
         </div>

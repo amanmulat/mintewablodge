@@ -1,26 +1,26 @@
-import Bedroom from '../../assets/card/service/bedroom.jpg'
-import Sunset from '../../assets/card/service/sunset.jpg'
-import People from '../../assets/card/service/people.jpg'
+import Bedroom from "../../assets/card/service/bedroom.jpg";
+import Sunset from "../../assets/card/service/sunset.jpg";
+import People from "../../assets/card/service/people.jpg";
 
 const contents = [
-    {
-        title : "Bedroom",
-        description : "Eiusmod aliquip minim anim labore excepteur. Ut esse ex aliquip culpa amet sit consectetur. Exercitation in exercitation ullamco sunt incididunt ",
-        image : Bedroom
-    },
-    {
-        title : "Catring",
-        description : "Ipsum laborum id officia id dolor nostrud ut ea esse. Ipsum labore sint ut sunt aliqua veniam. ",
-        image : Sunset
-    }, {
-        title : "Bar and Restorant",
-        description : "Irure consequat ut non ex elit elit laboris enim incididunt occaecat excepteur aliqua. ",
-        image : People
-    }, {
-        title : "another bed",
-        description : "Eiusmod velit voluptate labore aliqua non quis ipsum laborum labore tempor anim. Labore culpa laboris deserunt in voluptate.",
-        image : Bedroom
-    },
-]
+  {
+    title: "Comfortable Accommodation",
+    description:
+      "Enjoy a relaxing stay in our cozy lodge rooms, complete with plush bedding and modern amenities.",
+    image: Bedroom,
+  },
+  {
+    title: "Scenic Location",
+    description:
+      "Nestled in nature, our lodge offers a picturesque setting with stunning views of forests, the city of Gondar and mountains. ",
+    image: Sunset,
+  },
+  {
+    title: "Event Facilities",
+    description:
+      "Host your special occasions or corporate retreats in our versatile event spaces, accommodating both small and large gatherings.",
+    image: People,
+  },
+];
 
-export default contents
+export default contents;

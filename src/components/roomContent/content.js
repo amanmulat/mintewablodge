@@ -5,21 +5,21 @@ const rooms = [
   {
     roomType: "Single Bedroom",
     Description:
-      "Nulla ipsum reprehenderit in irure incididunt est excepteur excepteur nisi mollit. Quis enim qui duis elit quis pariatur sint anim. Non eiusmod incididunt in ut consequat quis nisi amet ipsum. Dolor velit eu aliqua irure.",
+      "Our Single Room offers a comfortable and spacious retreat for couples or solo travelers. Relax in a room featuring a luxurious king-sized bed, modern amenities, and breathtaking views of the surrounding natural beauty.",
 
     imgsrc: SingleBedroom,
   },
   {
-    roomType: "Double Bedroom",
+    roomType: "Family Suite",
     Description:
-      " In voluptate ad veniam magna do in. Occaecat incididunt laboris voluptate minim duis mollit pariatur. Exercitation eiusmod culpa ex officia est. Deserunt ullamco occaecat dolor aute aute cupidatat sit.",
+      " The Family Suite is designed to accommodate small families or groups. Unwind in this spacious suite, which includes a king-sized bed and an additional single bed. Enjoy the beautiful views and make the most of your time together.",
 
     imgsrc: DoubleBedroom,
   },
   {
     roomType: "Twin Bedroom",
     Description:
-      "Duis ullamco et sint ad. Ipsum ad amet aliquip laboris non do fugiat. Quis reprehenderit eiusmod aliquip ullamco qui mollit exercitation amet occaecat voluptate. Aute Lorem labore commodo sit esse.",
+      "Perfect for friends or family traveling together, our Twin Room provides a cozy stay. This room features two comfortable beds, ensuring a restful night's sleep for each guest. Enjoy the serene vistas and create memorable experiences together.",
 
     imgsrc: TwinBedroom,
   },

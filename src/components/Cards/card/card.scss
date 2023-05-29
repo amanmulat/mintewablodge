@@ -1,21 +1,23 @@
-@import '../../../scss/color.scss';
-.mincard-text{
-    font-size: 0.8rem;
-    line-height: 1.5;
-    font-family: $paragraph-font;
-    text-align: justify;
+@import "../../../scss/color.scss";
+.mincard-text {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-family: $paragraph-font;
+  text-align: justify;
 }
-.mincard-body{
-    padding: 0.2rem;
-    margin-top: 1rem;
+.mincard-body {
+  padding: 0.2rem;
+  margin-top: 1rem;
 }
-.mincard-img-top{    
-    height: 18rem;
-    width: 100%;
-    transform: scale(1); 
-    transition: transform 0.5s ease;
+.mincard-img-top {
+  height: 18rem;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 0.5s ease;
 }
-.mincard-img-top:hover{
-    transform: scale(1.2);
+.mincard-img-top:hover {
+  transform: scale(1.2);
 }
-
+.mincard-header-text {
+  font-size: 1rem;
+}
